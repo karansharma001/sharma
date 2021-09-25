@@ -1,0 +1,506 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+:root {
+  --primary: rgb(3, 179, 3);
+  --secondary: rgb(77, 177, 77);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----- Hide menu section -----  */
+
+
+
+/* --------- Hero section --------  */
+
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 80%)),
+    url(./images/heroThree.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+
+#inside-menu{
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  min-height: 100vh;
+  width: 200px;
+  /* overflow: hidden; */
+  z-index: 1;
+  right: -200px;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+  transition: 0.5s;
+ 
+}
+
+#inside-menu h2{
+    font-size: 2rem;
+}
+
+#inside-menu ul{
+  list-style: none;
+  margin: 30px 0px;
+  
+}
+
+#cross{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#cross i{
+  margin-bottom: 19px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+#cross i:hover{
+  color: var(--primary);
+  transform: rotate(45deg);
+}
+
+#inside-menu ul li{
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+#inside-menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#rotate {
+  display: block;
+  color: #80808024;
+  position: absolute;
+  top: 99px;
+  /* left: 0; */
+  font-size: 34rem;
+  right: 141px;
+}
+
+#logo {
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+#logo ul {
+  display: flex;
+  list-style: none;
+}
+
+#logo ul li a {
+  text-decoration: none;
+  color: grey;
+  transition: 0.5s ease-out;
+}
+
+#logo ul li a:hover {
+  color: white;
+}
+
+#logo ul li {
+  margin: 0px 20px;
+  font-size: 20px;
+}
+
+#hero-inside-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#hero-text-box {
+  color: white;
+  margin-left: 150px;
+  position: relative;
+}
+
+#hero-text-box::after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 2px;
+  background-color: #ffffff5c;
+  display: block;
+  left: -42px;
+  top: 0;
+}
+
+#hero-text-box h2 {
+  font-size: 3.6rem;
+  line-height: 70px;
+}
+
+#hero-button-box {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin: 20px 0px;
+}
+
+#hero-button-box a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  margin: 10px 0px;
+  margin-right: 20px;
+  padding: 10px 40px;
+  padding-top: 18px;
+  transition: 0.5s ease-out;
+}
+
+#hero-button-box a:hover {
+  color: var(--primary);
+  background-color: white;
+
+  font-weight: bold;
+}
+
+#social-link-box {
+  color: white;
+}
+
+.links i {
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+.links {
+  /* border: 2px solid white; */
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 0px 15px;
+  margin: 16px;
+  transition: 0.3s ease-out;
+}
+
+.links:hover {
+  color: var(--primary);
+  background-color: white;
+  color: black;
+
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#menu {
+  font-size: 20px;
+  position: fixed;
+  top: 29px;
+  right: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  animation: fade 0.5s linear;
+  
+}
+
+#menu i{
+  transition: 0.5s ease-in-out;
+}
+
+#menu i:hover{
+  color: grey;
+  
+  transform: rotate(90deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#menu span {
+  color: grey;
+  /* margin-bottom: 15px; */
+  text-align: center;
+  margin-right: 15px;
+  margin-bottom: 4px;
+}
+
+#menu i {
+  color: grey;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#menu:hover span {
+  color: var(--primary);
+  transition: 1s;
+}
+
+/* -------- Intro section part -------  */
+
+#intro {
+  min-height: 80vh;
+  background-color: var(--secondary);
+  padding: 70px 0px;
+  padding-bottom: 30px;
+}
+
+#intro-one {
+  text-align: center;
+  color: black;
+  padding: 10px 120px;
+}
+
+#intro-one h3 {
+}
+
+#intro-one h1 {
+  color: white;
+  font-size: 5rem;
+  line-height: 100px;
+}
+
+#intro-one h1::after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background-color: white;
+  margin: 10px auto;
+  display: block;
+}
+
+#intro-one p {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 50px 0px;
+}
+
+#intro-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0px;
+}
+
+.intro-col {
+  color: white;
+  margin: 0px 50px;
+  text-align: center;
+}
+
+.intro-col h1 {
+  font-size: 5.5rem;
+  line-height: 30px;
+}
+
+.intro-col p {
+  color: black;
+  margin: 10px 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ------ Section three ------  */
+
+#s3top{
+  text-align: center;
+  margin-top: 100px ;
+}
+
+#s3top:after{
+  content: "";
+  background-color: grey;
+  height: 2px;
+  width: 40%;
+  display: block;
+  margin: 30px auto;
+}
+
+#s3top h3{
+  color: var(--primary);
+  font-size: 25px;
+  margin: 10px 0px;
+
+}
+
+#s3top h2{
+  font-size: 4rem;
+  line-height: 70px;
+}
+
+#s3grid{
+  display: grid;
+  grid-template-columns: 530px 530px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.s3grid-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 25px;
+}
+
+.s3grid-content i{
+  color: var(--primary);
+  display: block;
+  font-size: 40px;
+  margin: 0px 10px;
+}
+
+.grid-inner-content{
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.grid-inner-content h2{
+  font-size: 2rem;
+  font-weight: 1000;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* ---- Image gallery section ----  */
+
+#imageGal{
+  background-color: black;
+  color: white;
+  padding: 40px 0px;
+}
+
+#sec4head{
+  text-align: center;
+  padding: 40px 0px;
+}
+
+#sec4head p{
+  color: var(--primary);
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+#sec4head h2{
+  font-size: 3.6rem;
+  line-height: 70px;
+}
+
+#gallery{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+}
+
+.galCards {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+.galCards img{
+  width: 100%;
+  transition: 0.5s;
+  
+
+}
+
+/* .galCards img:hover{
+  transform: scale(1.1);
+} */
+
+.txt{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.651);
+  color: white;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.txt p{
+  font-size: 2rem;
+}
+
+.galCards:hover .txt{
+  opacity: 1;
+}
+
+.galCards:hover img{
+  transform: scale(1.1);
+}
+
+/* .txt:hover{
+  opacity: 1;
+} */
+
+
+
+
+footer{
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+footer p{
+  font-size: 20px;
+}
+
+
+
+.reveals {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.reveals.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
